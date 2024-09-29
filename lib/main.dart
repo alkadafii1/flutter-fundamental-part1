@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'basic_widgets/text_widget.dart';
+import 'basic_widgets/image_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Alkadafi Firnawan'),
     );
   }
 }
@@ -105,7 +107,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+            const MyTextWidget(),
+            Text(
               'You have pushed the button this many times:',
             ),
             Text(
