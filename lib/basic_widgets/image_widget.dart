@@ -5,8 +5,11 @@ class MyImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("MyImageWidget is being built"); 
     return const Image(
-      image: AssetImage("assets/logo.jpg")
+      image: AssetImage("assets/logo.jpg"),
+    
     );
   }
 }
+
